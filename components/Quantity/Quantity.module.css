@@ -1,0 +1,17 @@
+.quantity {
+  display: inline-flex;
+  border: 1px solid black;
+  border-radius: 9999px;
+}
+
+.quantity button {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border: none;
+  background-color: transparent;
+}
+
+.quantity p {
+  padding: 10px 16px;
+}

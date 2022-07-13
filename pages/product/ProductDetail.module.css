@@ -1,0 +1,138 @@
+.mainImage {
+  border-radius: 8px;
+  max-width: 450px;
+  max-height: 450px;
+  aspect-ratio: 1 / 1;
+  background-color: #ebebeb;
+}
+
+.mainImage img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.smallImages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.smallImage {
+  width: 70px;
+  height: 70px;
+  background-color: #ebebeb;
+  border-radius: 4px;
+}
+
+.smallImage img {
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.details {
+  margin-top: 32px;
+}
+
+.reviews {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  color: #f02d34;
+}
+
+.quantityContainer {
+  margin-top: 16px;
+}
+
+.details h1 {
+  font-size: 1.5rem;
+}
+
+.details h3 {
+  margin-top: 8px;
+  font-size: 24px;
+}
+
+.details p {
+  margin-top: 16px;
+  color: #7c7c7c;
+}
+
+.actionButtons {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.actionButtons button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.actionButtons button:nth-child(1) {
+  color: #f02d34;
+  background-color: white;
+  border: 1px solid #f02d34;
+}
+
+.actionButtons button:nth-child(2) {
+  color: white;
+  background-color: #f02d34;
+}
+
+.mayLike {
+  margin-top: 64px;
+}
+
+.maylikeProducts{
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.marquee {
+  padding-bottom: 16px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* .track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 10s linear infinite;
+} */
+
+/* .track:hover {
+  animation-play-state: paused;
+} */
+
+/* @keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+} */
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    gap: 32px;
+  }
+
+  .mainImage {
+    width: 450px;
+    height: 450px;
+  }
+
+  .details {
+    margin-top: 0px;
+  }
+}

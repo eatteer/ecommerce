@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #f02d34;
+  font-size: 32px;
+}
+
+.cartIcon {
+  position: relative;
+  border: none;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  font-size: 24px;
+  color: gray;
+  background-color: transparent;
+}
+
+.cartItemQty {
+  position: absolute;
+  right: -8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.2rem;
+  font-size: 12px;
+  font-weight: 600;
+  color: #eee;
+  background-color: #f02d34;
+}

@@ -1,0 +1,148 @@
+.background {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease-in 300ms;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.cartContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  max-width: 450px;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
+}
+
+.openCart {
+  transform: translateX(0%);
+}
+
+.cartHeading {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.cartHeading button {
+  display: flex;
+  margin-right: 16px;
+  border: none;
+  background-color: white;
+  font-size: 24px;
+}
+
+.cartHeading p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emptyCart p {
+  color: #6c6f7d;
+}
+
+.emptyCart button {
+  margin-top: 20px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  background-color: #f02d34;
+}
+
+.cartItems {
+  padding: 16px;
+}
+
+.item {
+  margin-bottom: 32px;
+}
+
+.product {
+  display: flex;
+  gap: 16px;
+}
+
+.productImage {
+  max-width: 70px;
+  max-height: 70px;
+  background-color: #ebebeb;
+  border-radius: 4px;
+}
+
+.productImage img {
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.productDetails {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+}
+
+.productDetails h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.quantityContainer {
+  margin-top: 16px;
+}
+
+.removeItemButton {
+  display: flex;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  color: #f02d34;
+  background: transparent;
+}
+
+.payButton {
+  width: 100%;
+  margin-top: 16px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #f02d34;
+}
+
+@media screen and (min-width: 451px) {
+  .cartContainer {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}
